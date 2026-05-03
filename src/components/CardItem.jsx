@@ -66,7 +66,7 @@ if (isFlipped) return;
     return (
         <div
         onClick={handleClick}
-         className='transition-all duration-500 relative rounded-xl card-item float-left m-2 cursor-pointer w-20 h-20 md:w-32 md:h-32 hover:scale-105 shadow-lg
+         className='transition-all duration-500 relative rounded-xl card-item float-left m-2 cursor-pointer w-20 h-20 md:w-32 md:h-32 hover:scale-105 shadow-lg 
           '
           style={{opacity: isGlobalFlipped ? 0 : 1, 
             pointerEvents: isGlobalFlipped ? "none" : "auto"

@@ -290,11 +290,11 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 p-4">
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 p-4 cursor-pointer">
       
       {/* Heading */}
       <div className="text-center mb-6 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800  mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800  mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent ">
           React Memory Quiz
         </h1>
 
@@ -307,7 +307,7 @@ const App = () => {
       </div>
 
       {/* Cards */}
-      <div className="bg-white rounded-2xl shadow-2xl p-6 mb-6 border border-gray-200">
+      <div className="bg-white rounded-2xl  my-8 grid xs:grid-cols-4 3xl:grid-cols-6 border-gray-200">
       <div className="flex flex-wrap gap-4 justify-center max-w-2xl">
           {info.data.map((ele, index) => (
           <CardItem
@@ -355,3 +355,4 @@ const App = () => {
 };
 
 export default App;
+// shadow-2xl p-6 mb-4 border
